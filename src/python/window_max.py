@@ -43,7 +43,7 @@ class ArrayWindow(object):
 
     def get_windows_max(self, window_size, current_index):
         """
-        get_window_max(self,window_size,max_num_index,current_index) -> []
+        get_windows_max(self,window_size,max_num_index,current_index) -> []
             The class will return the array's peak such as
             [4,3,5,4,3,3,6,7] when the window size = 3
             it will return [4,3,5,5,5,4,6,7]
@@ -62,3 +62,6 @@ class ArrayWindow(object):
             return [max_num]
         else:
             return [max_num] + self.get_windows_max(window_size, current_index + self.OFFSET)
+
+if __name__ == '__main__':
+    print  ArrayWindow([1,2,7,9,6,7,4,3,3,3,3,3,3,3,3,5,4,3,3,6,7,3]).get_window_max(5)
