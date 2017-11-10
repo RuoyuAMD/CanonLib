@@ -1,4 +1,6 @@
-# !/usr/bin/python -*- coding: utf-8 -*-#
+# !/usr/bin/python
+# -*- coding: utf-8 -*-#
+
 """
 window_max is a array peak solution model
 """
