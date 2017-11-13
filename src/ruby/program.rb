@@ -26,7 +26,8 @@ end
 class MyClass
     # include Solution
     include Program
-    def test
+    def test(array)
+        array.pop
         # self.function
         # @class2 = Class2.new
         # @class2.function2
@@ -42,5 +43,8 @@ end
 
 
 @class = MyClass::new
-@class::test
+a = [1,2,3]
+puts a
+@class::test(a)
+puts a
 
