@@ -1,4 +1,4 @@
-# !/usr/bin/python
+# !/usr/bin/env python
 # -*- coding: utf-8 -*-#
 
 """
@@ -64,6 +64,3 @@ class ArrayWindow(object):
             return [max_num]
         else:
             return [max_num] + self.get_windows_max(window_size, current_index + self.OFFSET)
-
-if __name__ == '__main__':
-    print  ArrayWindow([1,2,7,9,6,7,4,3,3,3,3,3,3,3,3,5,4,3,3,6,7,3]).get_window_max(5)
