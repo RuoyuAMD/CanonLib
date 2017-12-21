@@ -138,6 +138,7 @@ void*SHA1::End_Chang(void* ptr, int type_size)
 }
 
 unsigned char* SHA1::HASH(unsigned char* data,long data_size)
+
 {
 	Init();
 	long trunk_count = ((data_size + 8) / 64) + 1;
